@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulario de Cv xvr</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 25px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        display: flex;
+        align-items: center;
+      }
+      input[type="checkbox"] {
+        margin-right: auto;
+        margin-top: auto;
+        
+      }
+      input[type="radio"] {
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+      input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 25px;
+        border: 2px solid #ddd;
+      }
+      input[type="submit"] {
+        background-color: #007BFF;
+        color: #fff;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="submit.php" method="post">
+    
+      <label for="name">Nombre y Apellidos:</label><br>
+      <input type="text" id="name" name="Nombreusu"><br>
+
+      <label for="fechadenaci">Fecha de Nacimiento:</label><br>
+      <input type="datetime-local" id="fechadenaci" name="fechadenaci"><br>
+
+      <label for="occupation">Ocupación:</label><br>
+      <input type="text" id="occupation" name="ocupacion"><br>
+
+      <label for="contact">Contacto (telefono, email):</label><br>
+      <input type="text" id="contact" name="contacto"><br>
+
+      <label for="nationality">Nacionalidad:</label><br>
+      <select id="nationality" name="nationalidad">
+        <option value="Perú">Perú</option>
+        <option value="Bolivia">Bolivia</option>
+        <option value="chile">Chile</option>
+      </select><br>
+
+      <label for="english">Nivel de ingles:</label><br>
+      <input type="radio" id="basic" name="english" value="basic">
+      <label for="basic">Básico</label><br>
+      <input type="radio" id="intermediate" name="english" value="intermediate">
+      <label for="intermediate">Intermedio</label><br>
+      <input type="radio" id="advanced" name="english" value="advanced">
+      <label for="advanced">Avanzado</label><br>
+      <input type="radio" id="fluent" name="english" value="fluent">
+      <label for="fluent">Fluido</label><br>
+
+      <label for="programming">Lenguajes de programación:</label><br>
+      <select id="programming" name="programación" multiple>
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        
+      </select><br>
+
+      <label for="skills">Aptitudes:</label><br>
+      <input list="skills" id="aptitudes" name="aptitudes"><br>
+      <datalist id="skills">
+        <option value="Liderazgo en grupo">
+        <option value="Comunicacion fluida">
+        <option value="Trabajo en equipo">
+      </datalist><br>
+
+      <label for="habilities">Habilidades:</label><br>
+      <input type="checkbox" id="Pensamiento positivo" name="habilities[]" value="Pensamiento positivo">
+      <label for="Pensamiento positivo">Pensamiento positivo</label><br>
+      <input type="checkbox" id="Lectura veloz" name="habilities[]" value="Lectura veloz">
+      <label for="Lectura veloz">Lectura veloz</label><br>
+      <input type="checkbox" id="Razonamiento intuitivo" name="habilities[]" value="Razonamiento intuitivo">
+      <label for="Razonamiento intuitivo">Razonamiento intuitivo</label><br>
+
+      <label for="profile">Perfil:</label><br>
+      <textarea id="profile" name="perfil"></textarea><br>
+
+      <input type="submit" value="Guardar datos">
+    
+  </body>
+</html>
