@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulario de Cv xvr</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 25px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        display: flex;
+        align-items: center;
+      }
+      input[type="checkbox"] {
+        margin-right: 5px;
+      }
+      input[type="text"] {
+        margin-bottom: 5px;
+      }
+      input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 25px;
+        border: 2px solid #ddd;
+      }
+      input[type="submit"] {
+        background-color: #007BFF;
+        color: #fff;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ingreso a LinkedIn</h1>
+    <form action="conectarbddatos.php" method="post">
+
+      <label for="name">Nombre y Apellidos:</label><br>
+      <input type="text" id="name" name="Nombreusu"><br>
+
+      <label for="fechadenaci">Fecha de Nacimiento:</label><br>
+      <input type="datetime-local" id="fechadenaci" name="fechadenaci"><br>
+
+      <div id="experiencia">
+        <label for="experiencia">Experiencia Laboral:</label><br>
+        <input type="text" id="experiencia" name="experiencia[]"><br>
+      </div>
+      <button type="button" onclick="agregarExperiencia()">Agregar Experiencia</button><br>
+
+      <label for="telefono">Teléfono:</label><br>
+      <input type="text" id="telefono" name="telefono"><br>
+
+      <label for="email">Email:</label><br>
+      <input type="text" id="email" name="email"><br>
+
+      <label for="nationality">Nacionalidad:</label><br>
+      <select id="nationality" name="nacionalidad">
+        <option value="Perú">Perú</option>
+        <option value="Bolivia">Bolivia</option>
+        <option value="chile">Chile</option>
+      </select><br>
+
+      <label for="idiomas">Idiomas:</label><br>
+      <div id="idiomas">
+        <input type="checkbox" id="ingles" name="idiomas[]" value="Inglés" onchange="mostrarNivel('ingles')"> Inglés<br>
+        <input type="text" id="nivel_ingles" name="nivelidioma[]" style="display: none;"><br>
+        <input type="checkbox" id="frances" name="idiomas[]" value="Francés" onchange="mostrarNivel('frances')"> Francés<br>
+        <input type="text" id="nivel_frances" name="nivelidioma[]" style="display: none;"><br>
+        <input type="checkbox" id="aleman" name="idiomas[]" value="Alemán" onchange="mostrarNivel('aleman')"> Alemán<br>
+        <input type="text" id="nivel_aleman" name="nivelidioma[]" style="display: none;"><br>
+        <input type="checkbox" id="italiano" name="idiomas[]" value="Italiano" onchange="mostrarNivel('italiano')"> Italiano<br>
+        <input type="text" id="nivel_italiano" name="nivelidioma[]" style="display: none;"><br>
+      </div>
+
+      <label for="programming">Lenguajes de programación:</label><br>
+      <select id="programming" name="programación" multiple>
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+      </select><br>
+
+      <label for="skills">Aptitudes:</label><br>
+      <input list="skills" id="aptitudes" name="aptitudes"><br>
+      <datalist id="skills">
+        <option value="Liderazgo en grupo">
+        <option value="Comunicacion fluida">
+        <option value="Trabajo en equipo">
+      </datalist><br>
+
+      <label for="habilities">Habilidades:</label><br>
+      <input type="checkbox" id="Pensamiento positivo" name="habilities[]" value="Pensamiento positivo">
+      <label for="Pensamiento positivo">Pensamiento positivo</label><br>
+      <input type="checkbox" id="Lectura veloz" name="habilities[]" value="Lectura veloz">
+      <label for="Lectura veloz">Lectura veloz</label><br>
+      <input type="checkbox" id="Razonamiento intuitivo" name="habilities[]" value="Razonamiento intuitivo">
+      <label for="Razonamiento intuitivo">Razonamiento intuitivo</label><br>
+
+      <label for="profile">Perfil:</label><br>
+      <textarea id="profile" name="perfil"></textarea><br>
+
+      <input type="submit" value="Guardar datos">
+    
+    </form>
+
+    <script>
+      function agregarExperiencia() {
+        const div = document.createElement("div");
+        div.id = "experiencia";
+        div.innerHTML = `
+          <label for="experiencia">Experiencia Laboral:</label><br>
+          <input type="text" id="experiencia" name="experiencia[]"><br>
+        `;
+        document.querySelector("#experiencia").appendChild(div);
+      }
+
+      function mostrarNivel(idioma) {
+        const checkbox = document.getElementById(idioma);
+        const nivelInput = document.getElementById("nivel_" + idioma);
+        if (checkbox.checked) {
+          nivelInput.style.display = "block";
+          nivelInput.focus();
+        } else {
+          nivelInput.style.display = "none";
+          nivelInput.value = "";
+        }
+      }
+    </script>
+  </body>
+</html>
