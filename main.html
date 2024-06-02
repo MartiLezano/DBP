@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Estilos actualizados para una interfaz de usuario moderna */
+body, ul {
+  margin: 0;
+  padding: 0;
+  min-width: 250px;
+  font-family: 'Arial', sans-serif; /* Fuente moderna y legible */
+}
+* {
+  box-sizing: border-box;
+}
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 40px;
+  list-style-type: none;
+  background: #e7f3fe; /* Color de fondo suave */
+  font-size: 18px;
+  transition: 0.2s;
+  user-select: none;
+}
+ul li:nth-child(odd) {
+  background: #ffffff; /* Alternancia de colores para las filas */
+}
+ul li:hover, .close:hover {
+  background: #d1e0f1; /* Color de fondo al pasar el ratón */
+}
+ul li.checked {
+  background: #a4b0be; /* Color de fondo para elementos marcados */
+  color: #ffffff;
+  text-decoration: line-through;
+}
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px;
+  background: #ff7675; /* Color de fondo para el botón de cerrar */
+  color: white; /* Color de texto para el botón de cerrar */
+}
+.header {
+  background-color: #74b9ff; /* Color de fondo para el encabezado */
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+input, .addBtn {
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  border: 1px solid #dfe6e9; /* Borde para el campo de entrada y el botón */
+}
+input {
+  margin: 0;
+  width: 75%;
+}
+.addBtn {
+  width: 25%;
+  background: #55efc4; /* Color de fondo para el botón de añadir */
+  color: #2d3436; /* Color de texto para el botón de añadir */
+  cursor: pointer;
+  transition: 0.3s;
+}
+.addBtn:hover {
+  background-color: #00b894; /* Color de fondo al pasar el ratón por el botón de añadir */
+}
+
+/* Nuevo estilo para mover el título al pie de la lista */
+.footer {
+  background-color: #74b9ff; /* Color de fondo para el pie de página */
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+  position: fixed; /* Fija el pie de página en la parte inferior */
+  bottom: 0;
+  width: 100%;
+}
+</style>
+</head>
+<body>
+
+<div id="myDIV" class="header">
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+
+<ul id="myUL">
+  <li>Hit the gym</li>
+  <li class="checked">Pay bills</li>
+  <li>Meet George</li>
+  <li>Buy eggs</li>
+  <li>Read a book</li>
+  <li>Organize office</li>
+</ul>
+
+<!-- Nuevo pie de página con el título movido -->
+<div class="footer">
+  <h2>My To Do List</h2>
+</div>
+
+<script>
+// Funciones simplificadas para la lista de tareas
+function createCloseButton() {
+  var span = document.createElement("SPAN");
+  span.className = "close";
+  span.textContent = "\u00D7";
+  span.onclick = function() {
+    this.parentElement.style.display = "none";
+  }
+  return span;
+}
+
+document.querySelectorAll("LI").forEach(function(li) {
+  li.appendChild(createCloseButton());
+});
+
+document.querySelector('ul').addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+function newElement() {
+  var inputValue = document.getElementById("myInput").value;
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    var li = document.createElement("li");
+    li.textContent = inputValue;
+    li.appendChild(createCloseButton());
+    document.getElementById("myUL").appendChild(li);
+    document.getElementById("myInput").value = "";
+  }
+}
+</script>
+
+</body>
+</html>
