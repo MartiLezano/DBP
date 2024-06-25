@@ -1,0 +1,16 @@
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\CV_gen\CV_gen\CV_gen\obj\Debug\netstandard2.0\CV_gen.csproj.AssemblyReference.cache
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\CV_gen\CV_gen\CV_gen\obj\Debug\netstandard2.0\CV_gen.GeneratedMSBuildEditorConfig.editorconfig
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\CV_gen\CV_gen\CV_gen\bin\Debug\netstandard2.0\CV_gen.deps.json
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\CV_gen\CV_gen\CV_gen\bin\Debug\netstandard2.0\CV_gen.dll
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\CV_gen\CV_gen\CV_gen\bin\Debug\netstandard2.0\ref\CV_gen.dll
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\CV_gen\CV_gen\CV_gen\bin\Debug\netstandard2.0\CV_gen.pdb
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\CV_gen\CV_gen\CV_gen\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\CV_gen\CV_gen\CV_gen\obj\Debug\netstandard2.0\CVPage.xaml.g.cs
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\CV_gen\CV_gen\CV_gen\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\CV_gen\CV_gen\CV_gen\obj\Debug\netstandard2.0\CV_gen.AssemblyInfoInputs.cache
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\CV_gen\CV_gen\CV_gen\obj\Debug\netstandard2.0\CV_gen.AssemblyInfo.cs
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\CV_gen\CV_gen\CV_gen\obj\Debug\netstandard2.0\CV_gen.csproj.CoreCompileInputs.cache
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\CV_gen\CV_gen\CV_gen\obj\Debug\netstandard2.0\XamlC.stamp
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\CV_gen\CV_gen\CV_gen\obj\Debug\netstandard2.0\CV_gen.dll
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\CV_gen\CV_gen\CV_gen\obj\Debug\netstandard2.0\refint\CV_gen.dll
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\CV_gen\CV_gen\CV_gen\obj\Debug\netstandard2.0\CV_gen.pdb
