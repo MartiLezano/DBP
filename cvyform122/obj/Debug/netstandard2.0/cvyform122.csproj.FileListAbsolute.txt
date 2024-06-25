@@ -1,0 +1,16 @@
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\cvyform122\cvyform122\cvyform122\bin\Debug\netstandard2.0\cvyform122.deps.json
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\cvyform122\cvyform122\cvyform122\bin\Debug\netstandard2.0\cvyform122.dll
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\cvyform122\cvyform122\cvyform122\bin\Debug\netstandard2.0\ref\cvyform122.dll
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\cvyform122\cvyform122\cvyform122\bin\Debug\netstandard2.0\cvyform122.pdb
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\cvyform122\cvyform122\cvyform122\obj\Debug\netstandard2.0\cvyform122.csproj.AssemblyReference.cache
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\cvyform122\cvyform122\cvyform122\obj\Debug\netstandard2.0\cvyform122.GeneratedMSBuildEditorConfig.editorconfig
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\cvyform122\cvyform122\cvyform122\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\cvyform122\cvyform122\cvyform122\obj\Debug\netstandard2.0\CVPage.xaml.g.cs
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\cvyform122\cvyform122\cvyform122\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\cvyform122\cvyform122\cvyform122\obj\Debug\netstandard2.0\cvyform122.AssemblyInfoInputs.cache
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\cvyform122\cvyform122\cvyform122\obj\Debug\netstandard2.0\cvyform122.AssemblyInfo.cs
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\cvyform122\cvyform122\cvyform122\obj\Debug\netstandard2.0\cvyform122.csproj.CoreCompileInputs.cache
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\cvyform122\cvyform122\cvyform122\obj\Debug\netstandard2.0\XamlC.stamp
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\cvyform122\cvyform122\cvyform122\obj\Debug\netstandard2.0\cvyform122.dll
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\cvyform122\cvyform122\cvyform122\obj\Debug\netstandard2.0\refint\cvyform122.dll
+E:\UCSP_Cursos\3 Semestre\Desarrollo Basado en Plataformas\cvyform122\cvyform122\cvyform122\obj\Debug\netstandard2.0\cvyform122.pdb

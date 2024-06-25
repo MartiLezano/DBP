@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyApp.MainPage">
+
+    <StackLayout Padding="20">
+        <Label Text="Formulario de CV"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               Margin="0,20,0,0"/>
+
+        <Entry x:Name="entryName" Placeholder="Nombre"/>
+        <Entry x:Name="entryEmail" Placeholder="Email"/>
+        <Entry x:Name="entryPhone" Placeholder="Teléfono"/>
+        <Entry x:Name="entryAddress" Placeholder="Dirección"/>
+        <Editor x:Name="editorSummary" Placeholder="Resumen" HeightRequest="100"/>
+
+        <Button Text="Generar CV"
+                Clicked="OnGenerateCVClicked"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+    </StackLayout>
+
+</ContentPage>
